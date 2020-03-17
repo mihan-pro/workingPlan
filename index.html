@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div class="">hello world</div>
+    <div class="wrapper">
+        <div class="main-menu">
+            <div class="main-menu-thisweek"></div>
+            <div class="main-menu-history"></div>
+        </div>
+        <div class="contentBlock">
+            <div class="currentWeek">
+                <div class="currentWeek-info">
+                    <div class="currentWeek-info-date">
+                        Сегодня:
+                        <span id="curDate">88.88.8888</span>
+                    </div>
+                    <div class="currentWeek-info-time">
+                        Время:
+                        <span id="curTime">88.88.8888</span>
+                    </div>
+                </div>                
+                <div class="currentWeek-inputs">
+                    <div class="currentWeek-inputs-start"></div>
+                    <div class="currentWeek-inputs-restTime"></div>
+                    <div class="currentWeek-inputs-finish"></div>
+                    <div class="currentWeek-inputs-addRecord"></div>
+                </div>
+                <div class="thisWeek">
+                    <div class="thisWeek-leftBlock">
+                        <div class="thisWeek-leftBlock-line">
+                            <div class="thisWeek-title">Вых.</div>
+                            <div class="thisWeek-day">
+                                <div class="thisWeek-day-cell">Дата</div>
+                                <div class="thisWeek-day-cell">Начало</div>
+                                <div class="thisWeek-day-cell">Конец</div>
+                                <div class="thisWeek-day-cell">Часы</div>
+                            </div>
+                        </div>
+
+                        <div class="thisWeek-leftBlock-line">
+                            <div class="thisWeek-title">ПН</div>
+                            <div class="thisWeek-day">
+                                <div class="thisWeek-day-cell">88,88,88</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                            </div>
+                        </div>
+
+                        <div class="thisWeek-leftBlock-line">
+                            <div class="thisWeek-title">ВТ</div>
+                            <div class="thisWeek-day">
+                                <div class="thisWeek-day-cell">88,88,88</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                            </div>
+                        </div>
+
+                        <div class="thisWeek-leftBlock-line">
+                            <div class="thisWeek-title">СР</div>
+                            <div class="thisWeek-day">
+                                <div class="thisWeek-day-cell">88,88,88</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                            </div>
+                        </div>
+
+                        <div class="thisWeek-leftBlock-line">
+                            <div class="thisWeek-title">ЧТ</div>
+                            <div class="thisWeek-day">
+                                <div class="thisWeek-day-cell">88,88,88</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                            </div>
+                        </div>
+
+                        <div class="thisWeek-leftBlock-line">
+                            <div class="thisWeek-title">ПТ</div>
+                            <div class="thisWeek-day">
+                                <div class="thisWeek-day-cell">88,88,88</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                                <div class="thisWeek-day-cell">88:65</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thisWeek-rightBlock">
+                        <div class="thisWeek-rightBlock-cell">
+                            <input type="checkbox">
+                        </div>
+                        <div class="thisWeek-rightBlock-cell">
+                            <input type="checkbox">
+                        </div>
+                        <div class="thisWeek-rightBlock-cell">
+                            <input type="checkbox">
+                        </div>
+                        <div class="thisWeek-rightBlock-cell">
+                            <input type="checkbox">
+                        </div>
+                        <div class="thisWeek-rightBlock-cell">
+                            <input type="checkbox">
+                        </div>
+                        <div class="thisWeek-rightBlock-cell">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="currentWeek-btn">
+                    <div class="wokedTime">
+                        Отработано за неделю:
+                        <span>40;00 ч.</span>
+                    </div>
+                    <div class="currentWeek-btn-saveasreport">сохранить как отчёт</div>
+                    <div class="currentWeek-btn-save">сохранить</div>
+                </div>
+            </div>
+            <div class="history"></div>
+        </div>
+
+    </div>
 </body>
+
 </html>
