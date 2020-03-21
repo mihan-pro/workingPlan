@@ -36,7 +36,6 @@ const currentDateInfo = function(){
         setTime();
         setDate();
         startTimer();
-        console.log("")
     };
     return {
         startWork:startWork,
