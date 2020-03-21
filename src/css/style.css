@@ -10,6 +10,10 @@ body
 {
     width: 100vw;
     height: 100vh;
+    /* background-image: url("../img/notebook-paper.jpg"); */
+    /* background-image: url("../img/white-brick.png"); */
+    background-image: url("../img/wood-pane.jpg");
+    background-repeat: repeat
 }
 .wrapper
 {
@@ -21,11 +25,12 @@ body
 }
 .main-menu
 {
-    border-right: solid 1px #bbbbbb;
+    border-right: solid 2px #555555;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10,60px);
     grid-row-gap: 0px;
+    background-color: #00000040;
 }
 .main-menu div
 {
@@ -34,7 +39,7 @@ body
 }
 .main-menu div:hover
 {
-    background-color: #BBB;
+    background-color: rgb(255, 255, 255);
 }
 .main-menu-thisweek
 {
@@ -91,17 +96,27 @@ body
 }
 .currentWeek-inputs-start-btn
 {
-    background: rgb(175, 255, 122);
+    background: rgba(175, 255, 122, 0.39);
     background-image: url("../img/timer.png");
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: center;
-    border: solid 2px rgb(147, 218, 100);
+    border: solid 2px rgba(147, 218, 100, 0.61);
     border-radius: 5px;
     width: 30px;
     height: 30px;
     margin: 5px;
     cursor: pointer;
+    transition: .5s ease;
+}
+.currentWeek-inputs-start-btn:hover
+{
+    background: rgba(175, 255, 122, 1);
+    background-image: url("../img/timer.png");
+    background-repeat: no-repeat;
+    background-size: 93%;
+    background-position: center;
+    border: solid 2px rgba(147, 218, 100, 1);
 }
 .currentWeek-inputs-start
 {
@@ -123,17 +138,27 @@ body
 }
 .currentWeek-inputs-finish-btn
 {
-    background: rgb(236, 117, 98);
+    background: rgba(236, 116, 98, 0.589);
     background-image: url("../img/timer.png");
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: center;
-    border: solid 2px rgb(228, 109, 109);
+    border: solid 2px rgba(228, 109, 109, 0.63);
     border-radius: 5px;
     width: 30px;
     height: 30px;
     margin: 5px;
     cursor: pointer;
+    transition: .5s ease;
+}
+.currentWeek-inputs-finish-btn:hover
+{
+    border: solid 2px rgba(228, 109, 109, 1);
+    background: rgba(236, 116, 98, 1);
+    background-image: url("../img/timer.png");
+    background-repeat: no-repeat;
+    background-size: 93%;
+    background-position: center;
 }
 .currentWeek-inputs-restTime
 {
@@ -155,7 +180,8 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(175, 255, 122);
+    /* background: rgb(175, 255, 122); */
+    background: rgba(175, 255, 122, 0.39);
     font-size: 28px;
     font-variant-caps: all-petite-caps;
     border: #333 1px solid;
@@ -164,6 +190,11 @@ body
     justify-self: end;
     margin-left: 15px;
     justify-self: end;
+    transition: ease .5s;
+}
+.currentWeek-inputs-addRecord-btn:hover
+{
+    background: rgba(175, 255, 122, 1);
 }
 .currentWeek-thisWeek
 {
@@ -174,6 +205,7 @@ body
     max-height: 380px;
     min-height: 120px;
     min-width: 370px;
+    background: #fff;
 }
 
 .thisWeek-leftBlock
@@ -250,12 +282,17 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(122, 246, 255);
+    background: rgba(122, 246, 255, 0.603);
     font-size: 28px;
     font-variant-caps: all-petite-caps;
     border: #333 1px solid;
     border-radius: 5px;
     cursor: pointer;
+    transition: ease .5s;
+}
+.currentWeek-btn-saveasreport:hover
+{
+    background: rgb(122, 246, 255);
 }
 .currentWeek-btn-save
 {
@@ -264,7 +301,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(175, 255, 122);
+    background: rgba(175, 255, 122, 0.603);
     font-size: 28px;
     font-variant-caps: all-petite-caps;
     border: #333 1px solid;
@@ -272,4 +309,8 @@ body
     cursor: pointer;
     justify-self: end;
     margin-left: 15px;
+}
+.currentWeek-btn-save:hover
+{
+    background: rgb(175, 255, 122);
 }
