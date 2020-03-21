@@ -4,6 +4,7 @@
     padding: 0;
     overflow: hidden;
     box-sizing: border-box;
+    font-family:"Arial";
 }
 body
 {
@@ -18,6 +19,38 @@ body
     grid-template-columns: 60px 1fr;
     grid-template-rows: 1fr;
 }
+.main-menu
+{
+    border-right: solid 1px #bbbbbb;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10,60px);
+    grid-row-gap: 0px;
+}
+.main-menu div
+{
+    cursor: pointer;
+    transition: .2s ease;
+}
+.main-menu div:hover
+{
+    background-color: #BBB;
+}
+.main-menu-thisweek
+{
+    background-image: url("../img/business-calendar.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    
+}
+.main-menu-history
+{
+    background-image: url("../img/calendar-interface-symbol-with-left-arrow-to-view-previous-days.png");
+    background-repeat: no-repeat;
+    background-size: 80%;;
+    background-position: center;
+}
 .contentBlock
 {
     padding: 2%; 
@@ -27,7 +60,7 @@ body
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows:  50px 150px 1fr 70px;
+    grid-template-rows:  50px 100px 1fr 70px;
     grid-template-columns: 1fr;
 
 }
@@ -41,10 +74,11 @@ body
 .currentWeek-inputs
 {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     font-size: 24px;
+    padding: 5px;
 }
 .currentWeek-inputs-input
 {
@@ -58,6 +92,10 @@ body
 .currentWeek-inputs-start-btn
 {
     background: rgb(175, 255, 122);
+    background-image: url("../img/timer.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
     border: solid 2px rgb(147, 218, 100);
     border-radius: 5px;
     width: 30px;
@@ -69,19 +107,27 @@ body
 {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 90px 80px 50px;
+    grid-template-rows: 1fr;
     align-items: center;
 }
 .currentWeek-inputs-finish
 {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 90px 80px 50px;
+    grid-template-rows: 1fr;
     align-items: center;
 }
 .currentWeek-inputs-finish-btn
 {
     background: rgb(236, 117, 98);
+    background-image: url("../img/timer.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
     border: solid 2px rgb(228, 109, 109);
     border-radius: 5px;
     width: 30px;
@@ -89,12 +135,45 @@ body
     margin: 5px;
     cursor: pointer;
 }
+.currentWeek-inputs-restTime
+{
+    font-size: 26px;
+    justify-self: end;
+}
+.currentWeek-inputs-addRecord
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.currentWeek-inputs-addRecord-btn
+{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(175, 255, 122);
+    font-size: 28px;
+    font-variant-caps: all-petite-caps;
+    border: #333 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: end;
+    margin-left: 15px;
+    justify-self: end;
+}
 .currentWeek-thisWeek
 {
     display: grid;
     grid-template-columns: 1fr 70px;
     grid-auto-rows: 1fr;
     border: 1px #adadad solid;
+    max-height: 380px;
+    min-height: 120px;
+    min-width: 370px;
 }
 
 .thisWeek-leftBlock
@@ -167,7 +246,7 @@ body
 .currentWeek-btn-saveasreport
 {
     width: 150px;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,7 +260,7 @@ body
 .currentWeek-btn-save
 {
     width: 150px;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
