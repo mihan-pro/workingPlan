@@ -5,12 +5,7 @@ function createWindow()
 {
     const win = new BrowserWindow({
         width:800,
-        height: 600,
-        minWidth: 760 ,
-        minHeight: 460,
-        title:"Учёт рабочего врмени",
-        frame:true,
-        autoHideMenuBar:true,
+        height: 800,
         webReferences:
         {
             nodeIntegration:true,
