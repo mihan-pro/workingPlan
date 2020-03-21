@@ -2,6 +2,8 @@
 {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 body
 {
@@ -16,12 +18,179 @@ body
     grid-template-columns: 60px 1fr;
     grid-template-rows: 1fr;
 }
+.contentBlock
+{
+    padding: 2%; 
+}
 .currentWeek
 {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows:  100px 100px 100px 100px;
+    grid-template-rows:  50px 150px 1fr 70px;
     grid-template-columns: 1fr;
 
+}
+.currentWeek-info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+.currentWeek-inputs
+{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    font-size: 24px;
+}
+.currentWeek-inputs-input
+{
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    font-size: 28px;
+    border: solid 1px #bbbbbb;
+    border-radius: 5px;
+}
+.currentWeek-inputs-start-btn
+{
+    background: rgb(175, 255, 122);
+    border: solid 2px rgb(147, 218, 100);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+.currentWeek-inputs-start
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.currentWeek-inputs-finish
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.currentWeek-inputs-finish-btn
+{
+    background: rgb(236, 117, 98);
+    border: solid 2px rgb(228, 109, 109);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+.currentWeek-thisWeek
+{
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    grid-auto-rows: 1fr;
+    border: 1px #adadad solid;
+}
+
+.thisWeek-leftBlock
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr) ;
+}
+.thisWeek-leftBlock-line
+{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr;
+}
+.thisWeek-day
+{
+    display: grid;
+    grid-template-columns: 50px repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.thisWeek-day-cell
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #adadad;
+}
+.thisWeek-rightBlock
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 , 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.thisWeek-rightBlock-cell
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #adadad;
+}
+.currentWeek-btn
+{
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.currentWeek-btn-wokedTime
+{
+    font-size: 28px;
+    justify-self: start;
+}
+.currentWeek-btns
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.currentWeek-btn-saveasreport
+{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(122, 246, 255);
+    font-size: 28px;
+    font-variant-caps: all-petite-caps;
+    border: #333 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.currentWeek-btn-save
+{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(175, 255, 122);
+    font-size: 28px;
+    font-variant-caps: all-petite-caps;
+    border: #333 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: end;
+    margin-left: 15px;
 }
