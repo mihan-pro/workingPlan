@@ -29,17 +29,17 @@
                 <div class="currentWeek-inputs">
                     <div class="currentWeek-inputs-start">
                         <div class="currentWeek-inputs-start-title">Начало</div>
-                        <input class="currentWeek-inputs-input" type="text" name="startDayInput" id="">
-                        <div class="currentWeek-inputs-start-btn"></div>
+                        <input class="currentWeek-inputs-input" maxlength="5" type="text"  id="startDayInput">
+                        <div class="currentWeek-inputs-start-btn" id="setCurStartTime"></div>
 
                     </div>
                     <div class="currentWeek-inputs-restTime">
-                        До нормы осталось <span id="restTime">8:00 ч</span>
+                        До нормы осталось <span id="restTime">00:00 ч</span>
                     </div>
                     <div class="currentWeek-inputs-finish">
                         <div class="currentWeek-inputs-finish-title">Конец</div>
-                        <input class="currentWeek-inputs-input" type="text" name="" id="finishDayInput">
-                        <div class="currentWeek-inputs-finish-btn"></div>
+                        <input class="currentWeek-inputs-input" maxlength="5" type="text" id="finishDayInput">
+                        <div class="currentWeek-inputs-finish-btn" id="setCurFinisTime"></div>
                     </div>
                     <div class="currentWeek-inputs-addRecord">
                         <div class="currentWeek-inputs-addRecord-btn" id="saveDayTimeBtn">Внести</div>
@@ -131,6 +131,9 @@
     <script src="./src/js/jquery-3.4.1.min.js"></script>
     <script src="./src/js/dateInfo.js"></script>
     <script src="./src/js/common.js"></script>
+    <script src="./src/js/inputblock.js"></script>
+    <script src="./src/js/OneDay.js"></script>
+    <script src="./src/js/OneWeek.js"></script>
 </body>
 
 </html>
