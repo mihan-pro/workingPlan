@@ -9,6 +9,6 @@
   "author": "Proshin M.",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^8.1.1"
+    "electron": "^15.5.5"
   }
 }
